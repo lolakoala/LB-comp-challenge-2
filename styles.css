@@ -1,0 +1,284 @@
+* {
+  font-family: "Teko";
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #550527;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  color: #CEB992;
+}
+
+body {
+  /*width: 100%;
+  height: 80%;*/
+  margin: 0;
+  background-color: #CEB992;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #550527;
+  display: inline-block;
+  margin: 20px 25px;
+
+}
+
+.card-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /*align-items: center;*/
+  width: 100%;
+  height: 100%;
+  background-color: #447604;
+  padding: 10px;
+}
+
+.card {
+  width: 260px;
+  height: 450px;
+  background-color: #CEB992;
+  margin: 10px;
+  box-shadow: 5px 5px 5px #8E9B90;
+  position: relative;
+  color: #550527;
+}
+
+
+.top-image {
+  width: 100%;
+  height: 170px;
+  background-size: cover;
+  background-position: center;
+  color: #AAD922;
+  position: relative;
+}
+
+.angela {
+  background-image: url('images/kate-angela.jpg');
+}
+
+.sexycats {
+  background-image: url('images/kate-sexycats.jpg');
+}
+
+.ghostbusters {
+  background-image: url('images/kate-ghostbusters.jpeg');
+}
+
+.hillary {
+  background-image: url('images/kate-hillary.jpg');
+}
+
+.bieber {
+  background-image: url('images/kate-bieber.png');
+}
+
+.twinbed {
+  background-image: url('images/kate-twinbed.jpg');
+}
+
+.ellen {
+  background-image: url('images/kate-ellen.jpg');
+}
+
+.russian {
+  background-image: url('images/kate-russian.jpg');
+}
+
+.logo  {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kate-obsessed {
+  /*height: 100px;
+  width: 200px;*/
+  display: block;
+  /*margin: auto;*/
+  margin-right: 10px;
+  margin-bottom: -15px;
+}
+
+.tagline {
+  display: block;
+  /*margin: auto;*/
+  font-size: 25px;
+  /*color: #CEB992;*/
+  margin-right: 10px;
+}
+
+.user {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+}
+
+.icon {
+  height: 25px;
+  width: 25px;
+}
+
+.user-icon {
+  margin-top: 15px;
+}
+
+.username {
+  color: #447604;
+  font-weight: 600;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+li {
+  display: inline-block;
+  margin: 10px;
+  font-size: 25px;
+}
+
+ul {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-icon {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.vid-link {
+  margin: auto;
+  height: 60px;
+  width: 230px;
+  /*border: 2px solid black;*/
+  position: absolute;
+  top: 240px;
+  left: 15px;
+  background-color: #AAD922;
+  padding: 10px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.play {
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.views,
+.num-views {
+position: absolute;
+right: 10px;
+}
+
+.views {
+  margin-top: 5px;
+  font-size: 20px;
+  top: 0;
+}
+.num-views {
+  font-size: 40px;
+  top: 20px;
+  margin-top: 0px;
+}
+
+.vid-title,
+.date {
+  display: block;
+  margin: 5px 0px 0px 10px;
+}
+
+.vid-title {
+  /*margin: 5px 10px;*/
+  font-size: 25px;
+}
+
+.date {
+  margin-top: 0px;
+}
+
+.playlist,
+.attachments {
+  font-size: 20px;
+  margin: 5px 5px;
+}
+
+.num-att {
+  font-size: 40px;
+  margin: -10px 5px;
+  color: #447604;
+}
+
+.playlist-name {
+  font-size: 30px;
+  margin: -10px 5px 5px 5px;
+}
+.beneath-link {
+  position: absolute;
+  top: 300px;
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #550527;
+
+}
+
+.kate-obsessed {
+  background-image: url("https://fontmeme.com/permalink/170720/8e9186377190fedcf588b875660ce18a.png");
+  height: 50px;
+  width: 250px;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 725px) {
+ul {
+  margin-left: -25px;
+}
+
+  li {
+    display: block;
+    margin-top: 15px;
+    font-size: 15px;
+  }
+
+  .tagline {
+    display: none;
+  }
+
+  .kate-obsessed {
+    background-image: url("https://fontmeme.com/permalink/170720/967d205a97e283ce885aeb0e81266cee.png");
+    height: 75px;
+    width: 100px;
+  }
+
+  .logo {
+    bottom: 40px;
+  }
+
+  .card-layout {
+    flex-direction: column;
+
+    align-items: center;
+  
+  }
+}
