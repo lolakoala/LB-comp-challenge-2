@@ -4,24 +4,25 @@
 }
 
 header {
-  background-color: #550527;
+  background-color: #004346;
   width: 100%;
   height: 200px;
   position: relative;
-  color: #CEB992;
+  color: #A6E1FA;
 }
 
 body {
-  /*width: 100%;
-  height: 80%;*/
+  width: 100%;
+  /*height: 80%;*/
   margin: 0;
-  background-color: #CEB992;
+  background-color: #A6A867;
+
 }
 
 h1 {
   font-size: 50px;
   font-weight: 700;
-  color: #550527;
+  color: #004346;
   display: inline-block;
   margin: 20px 25px;
 
@@ -29,8 +30,8 @@ h1 {
 
 .card-layout {
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-start;
+  flex-wrap: wrap;
   /*align-items: center;*/
   width: 100%;
   height: 100%;
@@ -38,14 +39,25 @@ h1 {
   padding: 10px;
 }
 
+/*.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 10px;
+}*/
+
 .card {
   width: 260px;
   height: 450px;
-  background-color: #CEB992;
-  margin: 10px;
+  background-color: #A6E1FA;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: .7%;
+  margin-right: .7%;
   box-shadow: 5px 5px 5px #8E9B90;
   position: relative;
-  color: #550527;
+  color: #004346;
+  flex-grow: 1;
 }
 
 
@@ -54,7 +66,7 @@ h1 {
   height: 170px;
   background-size: cover;
   background-position: center;
-  color: #AAD922;
+  color: #A6A867;
   position: relative;
 }
 
@@ -97,6 +109,13 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+}
+
+.logo:hover {
+  cursor: pointer;
+
+
 }
 
 .kate-obsessed {
@@ -112,8 +131,8 @@ h1 {
   display: block;
   /*margin: auto;*/
   font-size: 25px;
-  /*color: #CEB992;*/
-  margin-right: 10px;
+  /*color: #A6E1FA;*/
+  margin-right: 30px;
 }
 
 .user {
@@ -145,16 +164,39 @@ h1 {
   font-size: 20px;
 }
 
+.inactive {
+  color: #A6A867;
+}
+
 li {
   display: inline-block;
   margin: 10px;
   font-size: 25px;
 }
 
+.icon {
+  -webkit-transition:all 0.5s ease-out;
+  -moz-transition:all 0.5s ease-out;
+  -ms-transition:all 0.5s ease-out;
+  -o-transition:all 0.5s ease-out;
+  transition:all 0.5s ease-out;
+}
+
+.icon:hover {
+  -webkit-transform:scale(1.3);
+ -moz-transform:scale(1.3);
+ -ms-transform:scale(1.3);
+ -o-transform:scale(1.3);
+ transform:scale(1.3);
+ cursor: pointer;
+}
+
+
+
 ul {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: -30px;
 }
 
 .nav-icon {
@@ -170,10 +212,22 @@ ul {
   position: absolute;
   top: 240px;
   left: 15px;
-  background-color: #AAD922;
+  background-color: #A6A867;
   padding: 10px;
   overflow: hidden;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.vid-link:hover,
+.play:hover {
+  cursor: pointer;
+  border: 2px solid #447604;
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+.play:hover {
+  border-color: #A6E1FA;
 }
 
 .play {
@@ -181,6 +235,8 @@ ul {
   width: 60px;
   display: inline-block;
   margin: 10px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 100%;
 }
 
 .views,
@@ -239,20 +295,31 @@ right: 10px;
 
 a {
   text-decoration: none;
-  color: #550527;
+  color: #004346;
 
 }
 
 .kate-obsessed {
-  background-image: url("https://fontmeme.com/permalink/170720/8e9186377190fedcf588b875660ce18a.png");
+  background-image: url("https://fontmeme.com/permalink/170723/efd2a5cb8d8edfa5382d08801d72337c.png");
   height: 50px;
-  width: 250px;
+  width: 300px;
+  background-repeat: no-repeat;
+}
+
+.kate-obsessed:hover {
+  background-image: url("http://mac.h-cdn.co/assets/16/27/980x490/landscape-1467748926-mc-070516-index.jpg");
+  background-position: center;
+  background-size: auto;
   background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 725px) {
 ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   margin-left: -25px;
+  left: -10px;
 }
 
   li {
@@ -261,12 +328,14 @@ ul {
     font-size: 15px;
   }
 
+
+
   .tagline {
     display: none;
   }
 
   .kate-obsessed {
-    background-image: url("https://fontmeme.com/permalink/170720/967d205a97e283ce885aeb0e81266cee.png");
+    background-image: url("https://fontmeme.com/permalink/170723/c5906409bece56c9fba3fd71f003220d.png");
     height: 75px;
     width: 100px;
   }
@@ -275,10 +344,13 @@ ul {
     bottom: 40px;
   }
 
+}
+
+@media screen and (max-width: 450px) {
   .card-layout {
     flex-direction: column;
 
     align-items: center;
-  
+
   }
 }
