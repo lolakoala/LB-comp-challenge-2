@@ -75,6 +75,11 @@ a {
   width: 100%;
 }
 
+#ghost {
+  background-color: #447604;
+  box-shadow: none;
+}
+
 .date {
   margin: 0px 0px 0px 10px;
 }
